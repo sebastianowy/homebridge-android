@@ -117,6 +117,10 @@ ifconfig | awk '/netmask/{print $2}'
 
 Ignore 127.0.0.1 if you don't know what it is.
 
+## Known issues
+
+- [https://github.com/microsoft/node-pty/issues/665](https://github.com/microsoft/node-pty/issues/665)
+
 ## FAQ
 
 | Are these apk files official? |
