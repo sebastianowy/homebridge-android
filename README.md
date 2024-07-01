@@ -89,9 +89,9 @@ If everything was installed successfully you will receive:
 
 > == Installation successful ==<br>Execute hb command to start
 
-## Known installation issues
+### Known installation issues
 
-- [https://github.com/microsoft/node-pty/issues/665](https://github.com/microsoft/node-pty/issues/665) -> [https://github.com/termux/termux-packages/issues/20717](https://github.com/termux/termux-packages/issues/20717]
+- [https://github.com/termux/termux-packages/issues/20717#issuecomment-2196523557](https://github.com/termux/termux-packages/issues/20717#issuecomment-2196523557)
 
 ### After installation
 
