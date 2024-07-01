@@ -89,6 +89,10 @@ If everything was installed successfully you will receive:
 
 > == Installation successful ==<br>Execute hb command to start
 
+## Known installation issues
+
+- [https://github.com/microsoft/node-pty/issues/665](https://github.com/microsoft/node-pty/issues/665) -> [https://github.com/termux/termux-packages/issues/20717](https://github.com/termux/termux-packages/issues/20717]
+
 ### After installation
 
 To test that Homebridge just works execute any of these commands:
@@ -116,10 +120,6 @@ ifconfig | awk '/netmask/{print $2}'
 ```
 
 Ignore 127.0.0.1 if you don't know what it is.
-
-## Known issues
-
-- [https://github.com/microsoft/node-pty/issues/665](https://github.com/microsoft/node-pty/issues/665)
 
 ## FAQ
 
