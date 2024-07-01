@@ -75,7 +75,7 @@ The Termux app, which is going to be installed in the next step, is deprecated o
 
 1. Open this page and copy command below:
 ```bash
-curl https://raw.githubusercontent.com/Orachigami/homebridge-android/main/setup.sh | bash
+curl https://raw.githubusercontent.com/sebastianowy/homebridge-android/main/setup.sh | bash
 ```
 2. Open Termux app <picture><img src="/assets/termux-icon.png" alt="Termux icon" width="30px"></picture>
 3. Wait until it launches
@@ -84,7 +84,7 @@ curl https://raw.githubusercontent.com/Orachigami/homebridge-android/main/setup.
 6. Tap `Enter` button which should like something like :leftwards_arrow_with_hook: or 🔎
 7. When node_gyp error occurs, copy, paste and execute command below:
 ```bash
-sed 's/argv\.push\(\'-I\', addonGypi\)/argv\.push\(\'-I\', addonGypi\); argv\.push\(\'-Dandroid_ndk_path=""\'\)/g' [FILE_PATH]
+sed 's/argv\.push\(\'-I\', addonGypi\)/argv\.push\(\'-I\', addonGypi\)\; argv\.push\(\'-Dandroid_ndk_path=""\'\)/g' [FILE_PATH]
 ```
 9. Copy, paste and execute command from point 1.
 
