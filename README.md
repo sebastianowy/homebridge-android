@@ -82,6 +82,11 @@ curl https://raw.githubusercontent.com/Orachigami/homebridge-android/main/setup.
 4. Tap & Hold your finger on any place until you see a context menu with `COPY PASTE MORE...` buttons
 5. Tap `PASTE`
 6. Tap `Enter` button which should like something like :leftwards_arrow_with_hook: or 🔎
+7. When node_gyp error occurs, copy, paste and execute command below:
+```bash
+sed 's/argv.push(\'-I\', addonGypi)/argv.push(\'-I\', addonGypi); argv.push('-Dandroid_ndk_path=""')/g' [FILE_PATH]
+```
+9. Copy, paste and execute command from point 1.
 
 Installation process takes approximately 5 minutes.
 
