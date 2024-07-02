@@ -13,6 +13,13 @@ echo '== Setting up Dpkg options ==' &&
   rm ~/../usr/etc/apt/apt.conf.d/local &&
   echo '== Installing homebridge and homebridge-config-ui ==' &&
   npm install -g --unsafe-perm homebridge &&
+  npm install -g --unsafe-perm homebridge-config-ui-x
+
+  echo '== Fixing the error ==' &&
+  sed 's/argv\.push(\x27-I\x27, addonGypi)/argv\.push(\x27-I\x27, addonGypi);argv\.push(\x27-Dandroid_ndk_path=""\x27)/g' /data/termux/node_modules/node-gyp/lib/configure.js
+
+  echo '== Installing homebridge and homebridge-config-ui again ==' &&
+  npm install -g --unsafe-perm homebridge &&
   npm install -g --unsafe-perm homebridge-config-ui-x &&
   echo '== Creating default config ==' &&
   mkdir -p ~/.homebridge &&
