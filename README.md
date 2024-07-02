@@ -84,7 +84,7 @@ curl https://raw.githubusercontent.com/sebastianowy/homebridge-android/main/setu
 6. Tap `Enter` button which should like something like :leftwards_arrow_with_hook: or 🔎
 7. When node_gyp error occurs, copy, paste and execute command below:
 ```bash
-sed 's/argv\.push\(\'-I\', addonGypi\)/argv\.push\(\'-I\', addonGypi\)\; argv\.push\(\'-Dandroid_ndk_path=""\'\)/g' [FILE_PATH]
+  sed 's/argv\.push(\x27-I\x27, addonGypi)/argv\.push(\x27-I\x27, addonGypi);argv\.push(\x27-Dandroid_ndk_path=""\x27)/g' /data/termux/node_modules/node-gyp/lib/configure.js
 ```
 9. Copy, paste and execute command from point 1.
 
